@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/MishchenkoMaksim/landing-page/issues"
   },
-  "homepage": "https://github.com/MishchenkoMaksim/landing-page#readme"
+  "homepage": "https://github.com/MishchenkoMaksim/landing-page#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
