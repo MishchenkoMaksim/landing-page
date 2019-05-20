@@ -8,7 +8,7 @@ gulp.task("default", function (done) {
 })
 
 
-gulp.task("scss", function () {
+gulp.task("scss", function (done) {
    
     gulp.src(["./project/**/*.scss", "./project/**/*.sass"])
 
@@ -16,7 +16,8 @@ gulp.task("scss", function () {
         
         .pipe(sass().on("error", sass.logError))
    
-        .pipe(gulp.dest("./project"))
+        .pipe(gulp.dest("./project/css"))
+        done();
 })
 
 
