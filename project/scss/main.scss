@@ -7,7 +7,10 @@ $main_font: Oswald;
 $connection_height: 100px;
 $color_grey: grey;
 $color_white: white;
+$position: center;
 
+
+@import 'buttons';
 
 body {
     margin: $zero_size;
@@ -27,5 +30,5 @@ header {
     bottom: $padd_bottom;
     opacity: 0.65;
     color: $color_white;
-    text-align: center;
+    text-align: $position;
 }
