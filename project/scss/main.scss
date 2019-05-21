@@ -1,5 +1,31 @@
-﻿$zero_margin: 0px;
+﻿$zero_size: 0px;
+$main_size: 10px;
+$full_width: 100%;
+$full_height: 787px;
+$padd_bottom:34px;
+$main_font: Oswald;
+$connection_height: 100px;
+$color_grey: grey;
+$color_white: white;
 
-body{
-    margin: $zero_margin;
+
+body {
+    margin: $zero_size;
+    font-family: $main_font;
+}
+
+.grid{
+    display: grid;
+}
+
+header {
+    width: $full_width;
+    height: $full_height;
+    background-image: url('../img/header.jpg');
+    background-size: cover;
+    position: relative;
+    bottom: $padd_bottom;
+    opacity: 0.65;
+    color: $color_white;
+    text-align: center;
 }

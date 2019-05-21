@@ -10,7 +10,7 @@ gulp.task("default", function (done) {
 
 gulp.task("scss", function (done) {
    
-    gulp.src(["./project/**/*.scss", "./project/**/*.sass"])
+    gulp.src(["./project/**/*.scss"])
 
         .pipe(sass())
         
@@ -21,7 +21,7 @@ gulp.task("scss", function (done) {
 })
 
 
-gulp.task("scss:watch", function () {
-    
-    gulp.watch(["./project/**/*.scss", "./project/**/*.sass"], ["scss"])
+gulp.task("watch", function () {
+
+    gulp.watch(["./project/**/*.scss"], gulp.series("scss"))
 })
