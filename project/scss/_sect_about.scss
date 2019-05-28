@@ -1,7 +1,34 @@
 ﻿.sect_about{
-    grid-template-columns: 1fr 1fr;
+    background-color: lighten($color_grey, 46);
+    color: darken($color_grey, 30);
 
-    .writeleft{
-        border-right: 1px solid $color_grey;
+
+    .container{
+        grid-template-columns: 1fr 1fr;
     }
+}
+
+.writeleft {
+    border-right: $main_size/10 solid $color_grey;
+    font-size: $main_size + 8px;
+
+    padding: {
+        top: $main_size*6;
+        left: $main_size*22;
+        right: $main_size*6;
+        bottom: $main_size;
+    }
+
+    h2{
+        margin: {
+            top: $zero_size;
+            bottom: $main_size*4;
+        }
+    }
+}
+
+.writeright{
+    background-image: url(../img/1.jpg);
+    background-size: cover;
+    padding: $main_size * 2;
 }

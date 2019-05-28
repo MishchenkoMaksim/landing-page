@@ -40,10 +40,28 @@
   box-shadow: 3px 3px 7px #236309; }
 
 .sect_about {
+  background-color: whitesmoke;
+  color: #343434; }
+
+.sect_about .container {
   grid-template-columns: 1fr 1fr; }
 
-.sect_about .writeleft {
-  border-right: 1px solid #808080; }
+.writeleft {
+  border-right: 1px solid #808080;
+  font-size: 18px;
+  padding-top: 60px;
+  padding-left: 220px;
+  padding-right: 60px;
+  padding-bottom: 10px; }
+
+.writeleft h2 {
+  margin-top: 0px;
+  margin-bottom: 40px; }
+
+.writeright {
+  background-image: url(../img/1.jpg);
+  background-size: cover;
+  padding: 20px; }
 
 body {
   margin: 0px;
