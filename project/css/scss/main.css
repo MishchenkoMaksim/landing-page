@@ -105,6 +105,41 @@
   margin-top: 0px;
   color: white; }
 
+.section-img {
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+  grid-gap: 10px; }
+
+.item-img {
+  min-height: 180px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  align-content: center;
+  padding: 20px;
+  transition: all 0.7s ease;
+  cursor: pointer;
+  background-color: #b3b3b3; }
+
+.item-img span {
+  position: relative;
+  z-index: 1; }
+
+.item-img:nth-child(1) {
+  grid-column: 1/3;
+  background-image: url(../img/5.png);
+  background-size: contain; }
+
+.item-img:nth-child(4) {
+  grid-column: 2 / 4; }
+
+.item-img:nth-child(5) {
+  grid-column: 1 / 3;
+  grid-row: 3 / 5; }
+
+.item-img:nth-child(8) {
+  grid-column: 1 / 4; }
+
 body {
   margin: 0px;
   font-family: Oswald; }
