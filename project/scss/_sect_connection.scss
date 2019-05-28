@@ -1,0 +1,51 @@
+﻿
+
+.connection {
+    padding: $main_size*3 $zero_size;
+    background-color: darken($color_grey, 18);
+
+    .container {
+        max-width: $size-width*12+px;
+        margin: auto;
+        padding: $zero_size $main_size*2;
+    }
+
+        form {
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: $main_size*1.5;
+
+            padding: {
+                left: $main_size*2;
+                right: $main_size*2;
+            }
+        }
+
+        input {
+            border: none;
+            width: $main_size * 22;
+            height: $main_size * 8;
+            font-family: $font-family-secondary;
+            background-color: lighten($color_grey, 8);
+            transition: background-color 0.6s ease;
+            color: $color_dark;
+            outline: none;
+            color: $color_dark;
+            font-size: $main_size + 8px;
+            font-weight: bold;
+            font-style: italic;
+            padding-left: $main_size;
+
+            &:focus {
+                background-color: lighten($color_grey, 46);
+            }
+        }
+
+        input[type="button"] {
+            background-color: $color_blue;
+            border-radius: 5px;
+            font-size: $main_size*3;
+            padding: $main_size * 1.45;
+            margin-top: $zero_size;
+            color: white;
+        }
+    }
