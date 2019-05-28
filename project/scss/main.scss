@@ -4,13 +4,19 @@ $full_width: 100%;
 $full_height: 787px;
 $padd_bottom:34px;
 $main_font: Oswald;
+$color_orange: orange;
+$color_dark: #333;
+$color_blue: #308eee;
+$color_green: #56eb1a;
 $connection_height: 100px;
-$color_grey: grey;
+$color_grey: #808080;
 $color_white: white;
+$font-family-secondary: sans-serif;
 $position: center;
 
 
 @import 'buttons';
+@import 'sect_about';
 
 body {
     margin: $zero_size;
@@ -27,8 +33,29 @@ header {
     background-image: url('../img/header.jpg');
     background-size: cover;
     position: relative;
-    bottom: $padd_bottom;
-    opacity: 0.65;
-    color: $color_white;
+    align-content: $position;
     text-align: $position;
+
+    &::before {
+        content: "";
+        background-color: $color_grey;
+        position: absolute;
+        top: $zero_size;
+        left: $zero_size;
+        bottom: $zero_size;
+        right: $zero_size;
+        opacity: 0.65;
+    }
+
+    .head-container{
+        z-index: 1;
+        padding: $main_size*6 $main_size*2;
+        color: lighten($color_dark, 100);
+
+        h1{
+            font-size: $main_size*6;
+            line-height: 1.5;
+            margin: $main_size*2 $zero_size;
+        }
+    }
 }

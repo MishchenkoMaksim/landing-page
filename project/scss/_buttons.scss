@@ -1,15 +1,47 @@
 ﻿.btn {
     display: inline-block;
     border: none;
+    color: lighten($color_dark, 100);
     text-decoration: none;
     padding: $main_size*1.5 $main_size*5;
     font-size: $main_size*2;
     letter-spacing: 1.5;
     border-radius: $main_size/2;
     text-align: $position;
-    width: $main_size*20;
+    width: $main_size*22;
     transition: all 0.6s ease;
     cursor: pointer;
+    font-family: $font-family-secondary;
     margin: $main_size;
-    opacity: 0.95;
+    opacity: 1;
+
+    &-html {
+        background-color: $color_orange;
+        box-shadow: 3px 3px 7px darken($color_orange, 2.3);
+
+        &:hover {
+            box-shadow: 3px 3px 7px darken($color_orange,22);
+            background-color: darken($color_orange,2.3);
+        }
+    }
+
+    &-css {
+        background-color: $color_blue;
+        box-shadow: 3px 3px 7px darken($color_blue, 0.2);
+
+        &:hover {
+            background-color: darken($color_blue, 0.2);
+            box-shadow: 3px 3px 7px darken($color_blue, 40);
+        }
+    }
+
+    &-js{
+        background-color: $color_green;
+        box-shadow: 3px 3px 7px darken($color_green, 0.2);
+
+        &:hover{
+            background-color: darken($color_green, 2.3);
+            box-shadow: 3px 3px 7px darken($color_green, 30);
+        }
+    }
 }

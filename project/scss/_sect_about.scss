@@ -1,2 +1,7 @@
-﻿body {
+﻿.sect_about{
+    grid-template-columns: 1fr 1fr;
+
+    .writeleft{
+        border-right: 1px solid $color_grey;
+    }
 }
