@@ -27,8 +27,9 @@
     }
 }
 
-.writeright{
+.writeright {
     background-image: url(../img/1.jpg);
     background-size: cover;
     padding: $main_size * 2;
+    border: 30px solid lighten($color_grey, 46);
 }

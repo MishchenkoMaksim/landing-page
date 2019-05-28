@@ -61,7 +61,8 @@
 .writeright {
   background-image: url(../img/1.jpg);
   background-size: cover;
-  padding: 20px; }
+  padding: 20px;
+  border: 30px solid whitesmoke; }
 
 body {
   margin: 0px;
