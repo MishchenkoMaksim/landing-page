@@ -6,36 +6,59 @@
     font-family: $font-family-secondary;
 }
 
-.sect_blog {
-    justify_items: center;
+.sect_blog .container{
+    max-width: 1200px;
+    margin: auto;
 }
 
-.sect_blog .container{
-    width: 80%;
+.sect_blog{
+    min-height: 1000px;
 }
 
 .blog {
     &-home {
-        grid-template-columns: repeat(4, 1fr);
         grid-gap: $main_size*2;
+        grid-template-columns: repeat(4, 1fr);
     }
 
     &-item {
         background-color: lighten($color_grey, 46);
-        grid-template-rows: 1fr 1fr;
+        overflow: hidden;
+        text-decoration: none;
+        transition: background-color 0.5s ease;
+        color: $color_grey;
 
-        &-img{
-            height: 220px;
+        &:hover {
+            background-color: lighten($color_grey, 35);
+        }
 
-            &:hover{
+        &-img {
+            min-height: 280px;
+            background-size: cover;
+            background-position: $position;
+            transition: transform 0.5s ease;
+
+            &:hover {
                 transform: scale(1.1) translateY(-11px);
             }
         }
 
-        &-content{
+        &-content {
             padding: $main_size*2;
             text-align: $position;
             align-content: $position;
+            text-decoration: none;
+
+            h4 {
+                font-size: $main_size*1.8;
+                line-height: 1.5;
+                margin: $zero_size;
+            }
+
+            p {
+                margin-top: $main_size*2;
+                margin-bottom: $zero_size;
+            }
         }
 
         &:nth-child(3) {
@@ -43,7 +66,23 @@
         }
 
         &:nth-child(4) {
-            grid-column:1/3;
+            grid-column: 1/3;
         }
+    }
+}
+
+.frame {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: $zero_size;
+
+    &-item {
+        position: absolute;
+        top: $zero_size;
+        left: $zero_size;
+        width: 100%;
+        height: 100%;
+        border: $zero_size;
     }
 }
