@@ -151,8 +151,15 @@
   grid-row: 3 / 5;
   background-image: url(../img/8.jpg); }
 
+.item-img:nth-child(6) {
+  background-image: url(../img/7.jpg); }
+
+.item-img:nth-child(7) {
+  background-image: url(../img/abb.jpg); }
+
 .item-img:nth-child(8) {
-  grid-column: 1 / 4; }
+  grid-column: 1 / 4;
+  background-image: url(../img/blog2.jpg); }
 
 .sect_blog h1 {
   color: #808080;
@@ -225,6 +232,32 @@
   width: 100%;
   height: 100%;
   border: 0px; }
+
+/*btnBlog*/
+.btnBlog input {
+  justify-self: center;
+  margin-top: 50px; }
+
+footer {
+  width: 100%;
+  height: 230px;
+  background-color: #4d4d4d;
+  margin-top: 15px; }
+
+footer .headerFooter {
+  justify-self: center;
+  text-align: center;
+  align-self: center;
+  letter-spacing: 2px;
+  color: white;
+  font-size: 20px; }
+
+footer .headerFooter h2 {
+  position: relative;
+  top: 20px;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  font-weight: normal; }
 
 body {
   margin: 0px;

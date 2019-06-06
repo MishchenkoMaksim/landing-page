@@ -1,0 +1,23 @@
+﻿footer {
+    width: 100%;
+    height: $main_size*23;
+    background-color: darken($color_grey, 20);
+    margin-top: $main_size*1.5;
+
+    .headerFooter {
+        justify-self: center;
+        text-align: center;
+        align-self: center;
+        letter-spacing: 2px;
+        color: $color_white;
+        font-size: $main_size*2;
+
+        h2 {
+            position: relative;
+            top: $main_size*2;
+            letter-spacing: 2px;
+            line-height: 1.5;
+            font-weight: normal;
+        }
+    }
+}
