@@ -76,6 +76,7 @@
     display: block;
     width: 100%;
     padding: $zero_size;
+    min-height: $main_size*40;
 
     &-item {
         position: absolute;
