@@ -7,6 +7,7 @@
     font-size: $main_size*2;
     letter-spacing: 1.5;
     border-radius: $main_size/2;
+    margin: 50px auto;
     text-align: $position;
     width: $main_size*22;
     transition: all 0.6s ease;
@@ -35,11 +36,11 @@
         }
     }
 
-    &-js{
+    &-js {
         background-color: $color_green;
         box-shadow: 3px 3px 7px darken($color_green, 0.2);
 
-        &:hover{
+        &:hover {
             background-color: darken($color_green, 2.3);
             box-shadow: 3px 3px 7px darken($color_green, 30);
         }

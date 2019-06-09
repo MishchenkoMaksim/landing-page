@@ -7,6 +7,7 @@
   font-size: 20px;
   letter-spacing: 1.5;
   border-radius: 5px;
+  margin: 50px auto;
   text-align: center;
   width: 220px;
   transition: all 0.6s ease;
@@ -66,22 +67,21 @@
 
 .connection {
   padding: 30px 0px;
-  background-color: #525252; }
+  background-color: #525252;
+  text-align: center; }
 
 .connection .container {
-  max-width: 1200px;
+  max-width: 100%;
   margin: auto;
   padding: 0px 20px; }
 
 .connection form {
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 15px;
-  padding-left: 20px;
-  padding-right: 20px; }
+  grid-gap: 15px; }
 
 .connection input {
   border: none;
-  width: 220px;
+  width: 100%;
   height: 80px;
   font-family: sans-serif;
   background-color: #949494;
@@ -261,7 +261,7 @@ footer .headerFooter h2 {
   font-weight: normal; }
 
 footer .imageFooter {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-items: center; }
 
 footer .imageFooter img {
@@ -319,7 +319,6 @@ img {
     display: block;
     width: 60%;
     margin: 50px auto;
-    padding: 30px 200px;
     font-size: 40px;
     font-weight: bold; }
   .sect_about .container {
@@ -334,20 +333,18 @@ img {
     font-size: 40px;
     margin-top: 0px;
     margin-bottom: 40px;
-    margin-left: 35%; }
+    margin-left: 26%; }
   .sect_about .writeleft p {
     font-size: 30px; }
   .sect_about .writeright {
     display: none; }
   .connection form {
-    grid-template-columns: repeat(1, 1fr);
-    justify-items: center; }
+    grid-template-columns: repeat(1, 1fr); }
   .connection .container {
-    max-width: 80%;
     margin: auto;
     padding: 0px 20px; }
   .connection input {
-    width: 700px;
+    width: 90%;
     text-align: center;
     font-size: 30px; }
   .section-img {

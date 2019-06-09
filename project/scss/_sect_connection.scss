@@ -3,9 +3,10 @@
 .connection {
     padding: $main_size*3 $zero_size;
     background-color: darken($color_grey, 18);
+    text-align: $position;
 
     .container {
-        max-width: $size-width*12+px;
+        max-width: 100%;
         margin: auto;
         padding: $zero_size $main_size*2;
     }
@@ -13,16 +14,11 @@
         form {
             grid-template-columns: repeat(5, 1fr);
             grid-gap: $main_size*1.5;
-
-            padding: {
-                left: $main_size*2;
-                right: $main_size*2;
-            }
         }
 
         input {
             border: none;
-            width: $main_size * 22;
+            width: 100%;
             height: $main_size * 8;
             font-family: $font-family-secondary;
             background-color: lighten($color_grey, 8);

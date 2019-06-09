@@ -84,7 +84,6 @@ img{
             display: block;
             width: 60%;
             margin: $main_size*5 auto;
-            padding: $main_size*3 $main_size*20;
             font-size: $main_size*4;
             font-weight: bold;
         }
@@ -111,7 +110,7 @@ img{
                 margin: {
                     top: $zero_size;
                     bottom: $main_size*4;
-                    left: 35%;
+                    left: 26%;
                 }
             }
 
@@ -128,17 +127,15 @@ img{
     .connection {
         form {
             grid-template-columns: repeat(1, 1fr);
-            justify-items: center;
         }
 
         .container {
-            max-width: 80%;
             margin: auto;
             padding: $zero_size $main_size*2;
         }
 
         input {
-            width: $main_size*70;
+            width: 90%;
             text-align: center;
             font-size: $main_size*3;
         }
@@ -233,14 +230,23 @@ img{
     }
 
     footer {
-            h2 {
-                font-size: $main_size*10;
-            }
+        h2 {
+            font-size: $main_size*10;
+        }
 
-            p{
-                position: relative;
-                bottom:$main_size*5;
-                font-size: $main_size*5;
-            }
+        p {
+            position: relative;
+            bottom: $main_size*5;
+            font-size: $main_size*5;
+        }
+
     }
+
+}
+
+
+
+
+@media all and (max-width: 768px) {
+    
 }
