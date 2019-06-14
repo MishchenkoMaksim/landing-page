@@ -3,7 +3,7 @@ $main_size: 10px;
 $full_width: 100%;
 $full_height: 787px;
 $padd_bottom:34px;
-$main_font: Oswald;
+$main_font: Arial;
 $color_orange: orange;
 $size-width: 100;
 $color_dark: #333;
@@ -250,7 +250,7 @@ img{
 @media all and (max-width: 640px) {
     .head-container {
         span {
-            font-size: $main_size*2+5;
+            font-size: $main_size*3+5;
             display: inline-block;
         }
     }

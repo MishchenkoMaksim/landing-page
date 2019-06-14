@@ -273,7 +273,7 @@ footer .imageFooter img:hover {
 
 body {
   margin: 0px;
-  font-family: Oswald; }
+  font-family: Arial; }
 
 .grid {
   display: grid; }
@@ -399,7 +399,7 @@ img {
 
 @media all and (max-width: 640px) {
   .head-container span {
-    font-size: 25px;
+    font-size: 35px;
     display: inline-block; }
   .section-img {
     grid-template-columns: repeat(1, 1fr); }
